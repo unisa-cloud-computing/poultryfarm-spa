@@ -17,8 +17,8 @@ export const msalConfig = {
     // endpoint dell'external tenant e serve a MSAL per indirizzare l'utente alla login e da dove accettare i token.
     authority: 'https://cloudsaasmanagement.ciamlogin.com/c7f158c6-9d4c-4789-ae4e-664fbdb8f405',
     // url di DEV utile per redirect dove Entra ID rimanda l'utente dopo la login. Questo URL deve essere registrato anche nell'APP Registration.
-    redirectUri: 'http://localhost:4200/clienti',
-    postLogoutRedirectUri: 'http://localhost:4200/logout-success', // oppure una pagina libera da MsalGuard /welcome
+    redirectUri: 'https://witty-rock-04434f010.7.azurestaticapps.net/',
+    postLogoutRedirectUri: 'https://witty-rock-04434f010.7.azurestaticapps.net/logout-success', // oppure una pagina libera da MsalGuard /welcome
   },
   cache: {
     // dove MSAL memorizza i token. localStorage persiste anche dopo la chiusura del browser, sessionStorage invece no.
